@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movies</title>
+    <style>
+        /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #ffa500;
+}
+
+.site-name {
+  font-size: 2.5em;
+}
+
+/* Featured Section */
+.featured {
+  padding: 2em;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+}
+
+.featured-movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-movie img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 1em;
+}
+
+.movie-info {
+  max-width: 400px;
+}
+
+.watch-now {
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.watch-now:hover {
+  background-color: #e89a00;
+}
+
+/* Movies Catalog */
+.catalog {
+  padding: 2em;
+  text-align: center;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+}
+
+.movie-card {
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-card h3 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2em;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+    </style>
+</head>
+<body>
+   
+    
+      <!-- Header Section -->
+      <header class="header">
+        <h1 class="site-name">MovieStream</h1>
+        <nav class="nav">
+          <a href="#featured">Featured</a>
+          <a href="#catalog">Movies</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+    
+      <!-- Featured Movie Section -->
+      <section id="featured" class="featured">
+        <h2>Featured Movie</h2>
+        <div class="featured-movie">
+          <img src="https://revolverrani.com/wp-content/uploads/2022/10/iBomma-Telugu-Movies-New-2022-Download-Free.jpg" alt="Featured Movie">
+          <div class="movie-info">
+            <h3>Telugu Movies</h3>
+            <p>A thrilling adventure in a world where anything is possible. Join the journey with our heroes as they face challenges and uncover secrets.</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Movies Catalog Section -->
+      <section id="catalog" class="catalog">
+        <h2>Movies Catalog</h2>
+        <div class="movies-grid">
+          <div class="movie-card">
+            <img src="https://images.filmibeat.com/ph-big/2023/05/devara_168490895300.heic" alt="Movie 1">
+            <h3>DEVARA</h3>
+            <p>Genre: Action</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+          <div class="movie-card">
+            <img src="https://www.indiatelugu.com/wp-content/uploads/2017/07/2017-Telugu-Sports-Drama-Film-Guru-Poster-Images-In-High-Definition.jpg" alt="Movie 2">
+            <h3>GURU</h3>
+            <p>Genre: Drama</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+          <div class="movie-card">
+            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/f2-et00073063-26-03-2018-12-15-44.jpg" alt="Movie 3">
+            <h3>F2</h3>
+            <p>Genre: Comedy</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+          <div class="movie-card">
+            <img src="https://wallpapercave.com/wp/wp10314725.jpg" alt="Movie 4">
+            <h3>MAGA DHEERA</h3>
+            <p>Genre: Romance</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+          <div class="movie-card">
+            <img src="https://media.gqindia.com/wp-content/uploads/2020/06/Raju-Gari-Gadhi-2.jpeg" alt="Movie 5">
+            <h3>Room of the King 2</h3>
+            <p>Genre: Horror</p>
+            <button class="watch-now">Watch Now</button>
+          </div><div class="movie-card">
+            <img src="https://4.bp.blogspot.com/-VKTzmE6rQ7Y/VtvRPRRq-gI/AAAAAAAAS3o/l_yzXTF9fds/s1600/24%2BTelugu%2BMovie%2BFirst%2BLook%2BPosters2.jpg" alt="Movie 6">
+            <h3>24</h3>
+            <p>Genre: Sci-Fi</p>
+            <button class="watch-now">Watch Now</button>
+          </div><div class="movie-card">
+            <img src="https://live.staticflickr.com/65535/51752968499_9195685c48_b.jpg" alt="Movie 7">
+            <h3>PUSHPA</h3>
+            <p>Genre: Thriller</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+          <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BNmM5YTMxMzItNDNjNC00NWE3LTgwNGMtNjVmNjUwNjZiOTBhXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg" alt="Movie 8">
+            <h3>Joe</h3>
+            <p>Genre: Love</p>
+            <button class="watch-now">Watch Now</button>
+          </div><div class="movie-card">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.m-a0IsCfNbKQQtYNbUlufQHaKf&pid=Api&P=0&h=180" alt="Movie 9">
+            <h3>ARJUN REDDY</h3>
+            <p>Genre: Romance</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+          <div class="movie-card">
+            <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202207/Red_1657818036.jpg" alt="Movie 10">
+            <h3>RED</h3>
+            <p>Genre: Action</p>
+            <button class="watch-now">Watch Now</button>
+          </div><div class="movie-card">
+            <img src="https://3.bp.blogspot.com/-pW6eYWKs8EY/VZ-Cou5nzDI/AAAAAAAAAkM/_B3JrGwgd_Y/s1600/Bahubali-1.jpg" alt="Movie 11">
+            <h3>BAHUBALI</h3>
+            <p>Genre: Adventure</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+          <div class="movie-card">
+            <img src="http://www.bollywoodlife.com/wp-content/uploads/2016/07/750389.jpg" alt="Movie 12">
+            <h3>MS DHONI</h3>
+            <p>Genre: Sportic</p>
+            <button class="watch-now">Watch Now</button>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    
+      <!-- Footer Section -->
+      <footer class="footer">
+        <p>&copy; 2024 MovieStream. All rights reserved.</p>
+      </footer>
+    
+</body>
+</html>
